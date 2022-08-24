@@ -1,15 +1,17 @@
 import './App.css';
 import './Fonts.css';
-import { Container } from '@mui/material';
+import { Container, Box } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const iconStyle = { height: 100, width: 100, cursor: 'pointer' };
+const github = 'https://github.com/AsirAAlam';
+const linkedin = 'https://www.linkedin.com/in/asiraalam/';
 
 export default function HomePage() {
   return (
     <div className="App">
-      <Container>
+      <Container sx={{textAlign: 'center'}}>
         <h2 className="quicksand" style={{ fontWeight: 500, fontSize: 120 }}>
           Asir A. Alam
         </h2>
@@ -18,8 +20,24 @@ export default function HomePage() {
         </h2>
       </Container>
 
-      <GitHubIcon sx={{...iconStyle}} onClick={() => { }} />
-      <LinkedInIcon sx={{...iconStyle}} onClick={() => { }} />
+      <Box>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: 'inherit' }}
+          href={github}>
+          <GitHubIcon sx={{...iconStyle}} />
+        </a>
+      </Box>
+      <Box>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: 'inherit' }}
+          href={linkedin}>
+          <LinkedInIcon sx={{...iconStyle}} onClick={() => { }} />
+        </a>
+      </Box>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias quis repellat expedita veniam dolor fugit cupiditate, aut eius voluptates deleniti facere ducimus voluptatibus saepe earum nam porro exercitationem harum!
