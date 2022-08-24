@@ -1,0 +1,4 @@
+- spinning scroll progress indicator: https://www.arlenmccluskey.com/
+- half body portrait with background blended in: https://ojieame.design/
+- copyright tag
+- links: GitHub, LinkedIn, Resume

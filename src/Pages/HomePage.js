@@ -1,8 +1,9 @@
-import './App.css';
-import './Fonts.css';
-import { Container, Box } from '@mui/material';
+import '../App.css';
+import '../Fonts.css';
+import { Container } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 
 const iconStyle = { height: 100, width: 100, cursor: 'pointer' };
 const github = 'https://github.com/AsirAAlam';
@@ -20,24 +21,34 @@ export default function HomePage() {
         </h2>
       </Container>
 
-      <Box>
+      <div title="Go to GitHub">
         <a
+          className="linkIcon"
           target="_blank"
           rel="noreferrer"
-          style={{ color: 'inherit' }}
           href={github}>
-          <GitHubIcon sx={{...iconStyle}} />
+          <GitHubIcon sx={iconStyle} />
         </a>
-      </Box>
-      <Box>
+      </div>
+
+      <div title="Go to LinkedIn">
         <a
+          className="linkIcon"
           target="_blank"
           rel="noreferrer"
-          style={{ color: 'inherit' }}
           href={linkedin}>
-          <LinkedInIcon sx={{...iconStyle}} onClick={() => { }} />
+          <LinkedInIcon sx={iconStyle} />
         </a>
-      </Box>
+      </div>
+
+      <div title="Download Resume">
+        <a
+          className="linkIcon"
+          href={require("../resume.pdf")}
+          download="resume.pdf">
+          <InsertDriveFileIcon sx={iconStyle} />
+        </a>
+      </div>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias quis repellat expedita veniam dolor fugit cupiditate, aut eius voluptates deleniti facere ducimus voluptatibus saepe earum nam porro exercitationem harum!

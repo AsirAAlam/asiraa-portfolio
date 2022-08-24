@@ -9,3 +9,12 @@ h1 {
 p {
   color: #002E56;
 }
+
+.linkIcon {
+  color: black;
+  transition: color 0.3s;
+}
+
+.linkIcon:hover {
+  color: rgb(96, 96, 96);
+}
