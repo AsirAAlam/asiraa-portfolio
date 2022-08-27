@@ -1,11 +1,16 @@
 import '../App.css';
 import '../Fonts.css';
-import { Container } from '@mui/material';
+import { Container, Box } from '@mui/material';
+// import { motion } from "framer-motion";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
 
-const iconStyle = { height: 100, width: 100, cursor: 'pointer' };
+const iconStyle = { 
+  height: 100, 
+  width: 100, 
+  cursor: 'pointer' 
+};
 const github = 'https://github.com/AsirAAlam';
 const linkedin = 'https://www.linkedin.com/in/asiraalam/';
 
@@ -19,36 +24,44 @@ export default function HomePage() {
         <h2 className='quicksand' style={{ fontWeight: 300, fontSize: 80, marginTop: -130 }}>
           Personal Portfolio
         </h2>
+
+        <Box 
+          title="Go to GitHub"
+          sx={{ display: 'inline-block '}}>
+          <a
+            className="linkIcon"
+            target="_blank"
+            rel="noreferrer"
+            href={github}>
+            <GitHubIcon sx={iconStyle} />
+          </a>
+        </Box>
+        
+        <Box 
+          title="Go to LinkedIn"
+          sx={{ display: 'inline-block '}}>
+          <a
+            className="linkIcon"
+            target="_blank"
+            rel="noreferrer"
+            href={linkedin}>
+            <LinkedInIcon sx={iconStyle} />
+          </a>
+        </Box>
+
+        <Box 
+          title="Download Resume"
+          sx={{ display: 'inline-block '}}>
+          <a
+            className="linkIcon"
+            href={require("../resume.pdf")}
+            download="resume.pdf">
+            <SimCardDownloadIcon sx={iconStyle} />
+          </a>
+        </Box>
       </Container>
 
-      <div title="Go to GitHub">
-        <a
-          className="linkIcon"
-          target="_blank"
-          rel="noreferrer"
-          href={github}>
-          <GitHubIcon sx={iconStyle} />
-        </a>
-      </div>
 
-      <div title="Go to LinkedIn">
-        <a
-          className="linkIcon"
-          target="_blank"
-          rel="noreferrer"
-          href={linkedin}>
-          <LinkedInIcon sx={iconStyle} />
-        </a>
-      </div>
-
-      <div title="Download Resume">
-        <a
-          className="linkIcon"
-          href={require("../resume.pdf")}
-          download="resume.pdf">
-          <InsertDriveFileIcon sx={iconStyle} />
-        </a>
-      </div>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestias quis repellat expedita veniam dolor fugit cupiditate, aut eius voluptates deleniti facere ducimus voluptatibus saepe earum nam porro exercitationem harum!
