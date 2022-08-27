@@ -2,6 +2,10 @@
   background-color: #edf7ff; 
 }
 
+.App {
+  height: 200vh;
+}
+
 h1 {
   color: #002E56;
 }
