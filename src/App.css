@@ -6,19 +6,49 @@
   height: 200vh;
 }
 
-h1 {
-  color: #002E56;
-}
-
-p {
-  color: #002E56;
-}
-
 .linkIcon {
-  color: black;
+  color: #326273;
   transition: color 0.3s;
 }
 
 .linkIcon:hover {
-  color: rgb(96, 96, 96);
+  color: #98CBDD;
+}
+
+.cursorPointer {
+  cursor: pointer
+}
+
+.scroll-area {
+  font-size: 60px;
+  height: 100%;
+}
+
+.scroll-area {
+  scroll-snap-align: center;
+}
+
+.scroll-area {
+  margin: 0 auto;
+}
+
+.scroll-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-container {
+  height: 100%;
+}
+
+.fadeColor {
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
