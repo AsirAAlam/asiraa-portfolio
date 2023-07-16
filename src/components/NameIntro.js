@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {
   Box,
 } from '@mui/material';
-import Handles from '../components/Handles';
+import Handles from './Handles';
 
 export default function NameIntro() {
   const [offsetY, setOffsetY] = useState(0);
