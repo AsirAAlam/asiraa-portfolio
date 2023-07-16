@@ -3,10 +3,11 @@ import {
   Box,
 } from '@mui/material';
 import Handles from '../components/Handles';
+import bio from '../data/Bio';
 
 export default function NameIntro() {
   const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
+  const handleScroll = () => setOffsetY(window.scrollY);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -23,7 +24,7 @@ export default function NameIntro() {
         color: '#326273',
         opacity: 1 - 0.005 * offsetY,
       }}>
-        Asir Alam
+        {bio.name}
       </Box>
 
       <Box m={1} />
@@ -36,9 +37,7 @@ export default function NameIntro() {
         opacity: 1 - 0.005 * offsetY,
         background: 'rgba(0, 0, 0, 0)'
       }}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea dolorem iste quas ullam,
-        praesentium itaque eius quidem hic aliquam placeat enim temporibus eveniet distinctio
-        nesciunt, corrupti qui facilis doloremque cum.
+        {bio.description}
       </div>
 
       <Handles />

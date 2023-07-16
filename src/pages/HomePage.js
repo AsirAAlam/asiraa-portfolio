@@ -4,9 +4,8 @@ import { Box } from '@mui/material';
 import React, { useEffect, useState, useRef } from 'react'
 import NameIntro from '../components/NameIntro';
 import ExperienceItem from '../components/ExperienceItem';
-
-const exp = require('../json/Experiences.json');
-const colorPalette = require('../json/ColorPalette.json');
+import colorPalette from '../data/ColorPalette';
+import exp from '../data/Experiences';
 
 function SideNavigatorItem({ selected, onClick }) {
   return (
@@ -21,7 +20,7 @@ function SideNavigatorItem({ selected, onClick }) {
       }}
     />
   );
-};
+}
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -56,7 +55,7 @@ function HomePage() {
   const currentIndex = () => Math.round(offsetY / windowDimensions.height);
 
   return (
-    <Box>
+    <Box sx={{ position: 'relative' }}>
       <div className="scroll-area" style={{ height: '100vh' }} ref={(element) => { refs.current[0] = element }}>
         <NameIntro />
       </div>
@@ -77,6 +76,7 @@ function HomePage() {
                 role={item.role}
                 description={item.description}
                 id={id}
+                isLast={id === exp.length - 1}
               />
             </div>
           )

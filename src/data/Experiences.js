@@ -1,4 +1,4 @@
-[
+const experiences = [
   {
     "title": "Meta",
     "role": "Software Engineering Intern",
@@ -13,4 +13,6 @@
     "startDate": "September 2020",
     "endDate": "Present"
   }
-]
+];
+
+export default experiences;

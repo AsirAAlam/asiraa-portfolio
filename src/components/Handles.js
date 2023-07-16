@@ -1,8 +1,8 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
+import colorPalette from '../data/ColorPalette';
 
-const colorPalette = require('../json/ColorPalette.json');
 const iconStyle = { height: 40, width: 40, cursor: 'pointer' };
 const githubURL = 'https://github.com/AsirAAlam';
 const linkedinURL = 'https://www.linkedin.com/in/asiraalam/';
