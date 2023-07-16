@@ -1,5 +1,4 @@
-import React from 'react';
-import HomePage from './pages/HomePage.js';
+import HomePage from './pages/HomePage';
 import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
