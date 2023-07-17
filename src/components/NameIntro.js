@@ -16,7 +16,7 @@ export default function NameIntro() {
   }, []);
 
   return (
-    <Box sx={{ width: 600, ml: '50%' }}>
+    <Box sx={{ width: 600, pl: '50%' }}>
       <Box sx={{
         fontFamily: 'Oxygen',
         fontSize: 40,

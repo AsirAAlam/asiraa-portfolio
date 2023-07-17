@@ -33,7 +33,6 @@ function ExperienceItem({ title, role, description, id, isLast }) {
 
   return (
     <Box>
-
       <Grid container spacing={4}>
         <Grid item xs={6} sx={{ display: 'flex', flexDirection: 'row-reverse' }}>
           {/* <img src={require('../lincoln1.png')} alt="abraham lincoln" style={{ width: 'min(100%, 400px)' }} /> */}
