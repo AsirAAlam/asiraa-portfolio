@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import React, { useEffect, useState, useRef } from 'react'
 import NameIntro from '../components/NameIntro';
 import ExperienceItem from '../components/ExperienceItem';
+import ProjectPage from '../components/ProjectPage';
 import colorPalette from '../data/ColorPalette';
 import exp from '../data/Experiences';
 
@@ -31,7 +32,7 @@ function getWindowDimensions() {
 }
 
 function HomePage() {
-  const refs = useRef(new Array(exp.length + 1));
+  const refs = useRef(new Array(exp.length + 2));
   const [offsetY, setOffsetY] = useState(0);
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
@@ -56,18 +57,16 @@ function HomePage() {
 
   return (
     <Box sx={{ position: 'relative' }}>
-      <div className="scroll-area" style={{ height: '100vh' }} ref={(element) => { refs.current[0] = element }}>
-        <NameIntro />
-      </div>
-
-      <Box className="scroll-container" sx={{ height: '100vh' }}>
-        {/* <img src={require('../MishaPortrait.png')} style={{ position: 'absolute', height: '100vh', top: 0 }}/> */}
+      <Box className="scroll-container">
+        <div className="scroll-area" ref={(element) => { refs.current[0] = element }}>
+          <NameIntro />
+        </div>
 
         {exp.map((item, id) => {
           return (
             <div
               className="scroll-area"
-              style={{ width: '70%', margin: '0 auto' }}
+              style={{ width: '70%', margin: '0 auto', position: 'relative' }}
               ref={(element) => { refs.current[id + 1] = element }}
               key={id}
             >
@@ -81,6 +80,10 @@ function HomePage() {
             </div>
           )
         })}
+
+        <div className="scroll-area" ref={(element) => { refs.current[exp.length + 1] = element }}>
+          <ProjectPage />
+        </div>
       </Box>
 
       <Box sx={{
@@ -99,6 +102,7 @@ function HomePage() {
             borderRadius: 5,
           }}
         />
+
         {exp.map((item, id) => {
           return (
             <SideNavigatorItem
@@ -108,6 +112,11 @@ function HomePage() {
             />
           )
         })}
+
+        <SideNavigatorItem
+          selected={currentIndex() === exp.length + 1}
+          onClick={() => refs.current[exp.length + 1].scrollIntoView({ behavior: 'smooth' })}
+        />
       </Box>
     </Box>
   )
