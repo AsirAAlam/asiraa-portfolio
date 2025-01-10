@@ -1,0 +1,15 @@
+.mybutton {
+  border: none;
+  cursor: pointer;
+  font-family: "Oxygen", "Roboto", sans-serif;
+  background-position: right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mybutton:hover {
+  background-position: left;
+}
