@@ -1,20 +1,15 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
 import colorPalette from "../data/ColorPalette";
-import meta from '../data/meta.gif'
+import meta from "../data/meta.gif";
 
 function ExperienceItem({ title, role, description }) {
   return (
     <Grid container spacing={4}>
-      <Grid
-        item
-        xs={6}
-      >
-
+      <Grid item xs={6}>
         <Box>
-          <img alt='Meta logo' src={meta} style={{ objectFit: 'fill' }} />
+          <img alt="Meta logo" src={meta} style={{ objectFit: "fill" }} />
         </Box>
-
       </Grid>
       <Grid item xs={6}>
         <Box

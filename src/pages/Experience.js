@@ -1,11 +1,11 @@
-import React from 'react'
-import ExperienceItem from '../components/ExperienceItem'
-import experiences from '../data/Experiences'
-import Container from '@mui/material/Container'
+import React from "react";
+import ExperienceItem from "../components/ExperienceItem";
+import experiences from "../data/Experiences";
+import Container from "@mui/material/Container";
 
 export default function Experiences() {
   return (
-    <Container className='pt-16'>
+    <Container className="pt-16">
       <div className="mb-32">
         <ExperienceItem
           title={experiences[0].title}
@@ -20,5 +20,5 @@ export default function Experiences() {
         description={experiences[1].description}
       />
     </Container>
-  )
+  );
 }

@@ -6,8 +6,8 @@ import colorPalette from "../data/ColorPalette";
 
 export default function NameIntro() {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-      <Box sx={{ width: '50%' }}>
+    <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ width: "50%" }}>
         <Box
           sx={{
             fontFamily: "Oxygen",
