@@ -3,8 +3,7 @@ const experiences = [
     title: "Meta",
     role: "Software Engineering Intern",
     description:
-      "Two internships over two summers. Worked with Facebook Shop Ads in 2022 and " +
-      "Facebook Gaming in 2023.",
+      "Three summer internships. I worked with Facebook Shop Ads, Facebook Gaming, and Org Effectiveness teams. I accepted a full-time return offer and start once I graduate with my Master's in Computer Science.",
   },
   {
     title: "UCF Programming Team",
