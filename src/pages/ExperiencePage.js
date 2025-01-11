@@ -3,7 +3,7 @@ import ExperienceItem from "../components/ExperienceItem";
 import experiences from "../data/Experiences";
 import Container from "@mui/material/Container";
 
-export default function Experiences() {
+export default function ExperiencePage() {
   return (
     <Container className="pt-16">
       <div className="mb-32">
