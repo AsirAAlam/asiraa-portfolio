@@ -12,7 +12,7 @@ function ExperienceItem({ title, role, description }) {
       >
 
         <Box>
-          <img src={meta} style={{ objectFit: 'fill' }} />
+          <img alt='Meta logo' src={meta} style={{ objectFit: 'fill' }} />
         </Box>
 
       </Grid>
