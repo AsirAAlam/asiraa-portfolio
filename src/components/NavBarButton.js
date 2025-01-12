@@ -19,13 +19,11 @@ export default function NavBarButton({ label, href }) {
       </button>
 
       <div
-        className="bg-sky-900"
+        className="bg-sky-950"
         style={{
-          height: "0.2em",
-          width: "100%",
-          borderRadius: 10,
-          display: isCurrent ? "block" : "none",
-          transition: "all 0.7s",
+          height: "0.1em",
+          opacity: isCurrent ? 1 : 0,
+          transition: "opacity 0.3s",
         }}
       />
     </Link>
