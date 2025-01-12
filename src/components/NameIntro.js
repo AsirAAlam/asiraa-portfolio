@@ -22,8 +22,8 @@ export default function NameIntro() {
           <Box
             sx={{
               fontFamily: "Oxygen",
-              fontSize: 40,
-              fontWeight: 700,
+              fontSize: 64,
+              fontWeight: 500,
               color: colorPalette.color4,
               opacity: 1,
             }}
