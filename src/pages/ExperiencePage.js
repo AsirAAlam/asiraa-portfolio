@@ -12,7 +12,7 @@ const experiences = [
       <img
         alt="Meta logo"
         src={require("../images/meta.gif")}
-        style={{ objectFit: "fill", width: '80%' }}
+        style={{ objectFit: "fill", width: "80%" }}
       />
     ),
   },

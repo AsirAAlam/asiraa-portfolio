@@ -11,34 +11,37 @@ function HomePage() {
         <NameIntro />
       </Box>
 
-      <div style={{ position: 'absolute' }}>
-        <Box sx={{
-          position: 'fixed',
-          backgroundColor: 'transparent',
-          pointerEvents: 'none',
-          bottom: {
-            xs: 0,
-            lg: -48,
-            xl: -128
-          },
-        }}>
+      <div style={{ position: "absolute" }}>
+        <Box
+          sx={{
+            position: "fixed",
+            backgroundColor: "transparent",
+            pointerEvents: "none",
+            bottom: {
+              xs: 0,
+              lg: -48,
+              xl: -128,
+            },
+          }}
+        >
           <img
             style={{
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
             }}
-            alt='forest' src={require('../images/forest.png')}
+            alt="forest"
+            src={require("../images/forest.png")}
           />
         </Box>
 
         <a
-          className='text-teal-600'
+          className="text-teal-600"
           style={{
-            position: 'fixed',
+            position: "fixed",
             bottom: 0,
             right: 0,
-            backgroundColor: 'transparent',
+            backgroundColor: "transparent",
           }}
-          href='https://www.vecteezy.com/members/tati-dsgn'
+          href="https://www.vecteezy.com/members/tati-dsgn"
         >
           Art by Tatyana Pavliuk
         </a>

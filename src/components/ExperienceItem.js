@@ -6,7 +6,9 @@ function ExperienceItem({ title, role, description, img }) {
   return (
     <Grid container spacing={4}>
       <Grid item xs={6} className="flex items-center justify-center">
-        <Box className="w-10/12	h-10/12 flex items-center justify-center">{img}</Box>
+        <Box className="w-10/12	h-10/12 flex items-center justify-center">
+          {img}
+        </Box>
       </Grid>
       <Grid item xs={6}>
         <Box

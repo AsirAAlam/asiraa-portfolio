@@ -7,13 +7,17 @@ import colorPalette from "../data/ColorPalette";
 export default function NameIntro() {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Box sx={{
-        width: {
-          xs: "90%",
-          md: "70%",
-          lg: "50%",
-        }, display: "flex", justifyContent: "center"
-      }}>
+      <Box
+        sx={{
+          width: {
+            xs: "90%",
+            md: "70%",
+            lg: "50%",
+          },
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <Box>
           <Box
             sx={{
