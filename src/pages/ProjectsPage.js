@@ -14,6 +14,7 @@ const projects = [
         and lesson and problem creation processes.
       </>
     ),
+    href: "https://youtu.be/BqqgRUyl_rE",
   },
   {
     title: "Garden of Thorns",
@@ -28,6 +29,7 @@ const projects = [
         the game's UI, sound effects, and more.
       </>
     ),
+    href: "https://youtu.be/wU_3P-iMy1w",
   },
   {
     title: "Handler",
@@ -41,22 +43,17 @@ const projects = [
         service provider.
       </>
     ),
+    href: "https://github.com/NaimShaqqou/HandyMan-COP4331",
   },
   {
     title: "Parallel Karatsuba Paper",
     description: (
       <>
         Experimented with parallelizing the Karatsuba Algorithm for integer
-        multiplication and wrote a research paper outlining our findings.{" "}
-        <a
-          className="underline"
-          href="https://github.com/AsirAAlam/ParallelKaratsuba"
-        >
-          Link
-        </a>
-        .
+        multiplication and wrote a research paper outlining our findings.
       </>
     ),
+    href: "https://youtu.be/yeaFQWXXw78",
   },
   {
     title: "VR and AR Projects",
@@ -66,6 +63,7 @@ const projects = [
         small VR and AR projects using Unity.
       </>
     ),
+    href: "https://www.youtube.com/playlist?list=PLn7qUiMcQb5zoMz6l5YcBjeJ51owivutU",
   },
 ];
 
@@ -74,7 +72,7 @@ export default function ProjectsPage() {
     <Container>
       <Box>
         {projects.map((project, i) => (
-          <ProjectItem key={i} title={project.title}>
+          <ProjectItem key={i} title={project.title} href={project.href}>
             {project.description}
           </ProjectItem>
         ))}
