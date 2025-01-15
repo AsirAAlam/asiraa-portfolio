@@ -1,13 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-  background-color: #edf7ff; 
-}
-
-html {
-  scroll-snap-type: y mandatory;
-}
-
-.App {
-  height: 200vh;
+  background-color: #edf7ff;
 }
 
 .linkIcon {
@@ -16,30 +12,9 @@ html {
 }
 
 .linkIcon:hover {
-  color: #98CBDD;
+  color: #98cbdd;
 }
 
 .cursorPointer {
-  cursor: pointer
-}
-
-.scroll-area {
-  font-size: 60px;
-  height: 100%;
-  scroll-snap-align: center;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.scroll-container {
-  height: 100vh;
-}
-
-.fadeColor {
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  cursor: pointer;
 }
