@@ -45,6 +45,7 @@ const projects = [
       </>
     ),
     href: "https://github.com/NaimShaqqou/HandyMan-COP4331",
+    imgSrc: "/projects/handler.png",
   },
   {
     title: "Parallel Karatsuba Paper",
@@ -55,6 +56,7 @@ const projects = [
       </>
     ),
     href: "https://youtu.be/yeaFQWXXw78",
+    imgSrc: "/projects/karatsuba.png",
   },
   {
     title: "VR and AR Projects",
@@ -65,6 +67,7 @@ const projects = [
       </>
     ),
     href: "https://www.youtube.com/playlist?list=PLn7qUiMcQb5zoMz6l5YcBjeJ51owivutU",
+    imgSrc: "/projects/ar-vr.png",
   },
 ];
 

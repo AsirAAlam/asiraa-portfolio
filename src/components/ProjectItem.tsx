@@ -21,7 +21,7 @@ export default function ProjectItem({
   return (
     <Box className="mb-8 border-2 border-gray-300 flex">
       <Box
-        className="h-48 w-48 bg-sky-800"
+        className="h-48 w-48 bg-gray-800"
         style={{ flexShrink: 0, cursor: "pointer" }}
         onClick={handleClick}
       >
