@@ -11,7 +11,7 @@ export default function NavBarButton({
 }) {
   const location = useLocation();
 
-  let isCurrent = location.pathname === href;
+  const isCurrent = location.pathname === href;
 
   return (
     <Link to={href}>
@@ -29,7 +29,6 @@ export default function NavBarButton({
           height: "0.1em",
           opacity: isCurrent ? 1 : 0,
           transition: "opacity 0.3s",
-          // backgroundColor: 'green'
         }}
       />
     </Link>
