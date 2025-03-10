@@ -42,7 +42,7 @@ function Handles() {
 
       <a
         className="linkIcon"
-        href={require("../resume.pdf")}
+        href="/resume.pdf"
         style={aStyle}
         download="resume.pdf"
       >

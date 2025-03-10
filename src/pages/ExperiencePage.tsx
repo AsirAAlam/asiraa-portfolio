@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceItem from "../components/ExperienceItem";
 import Container from "@mui/material/Container";
 
@@ -11,7 +10,7 @@ const experiences = [
     img: (
       <img
         alt="Meta logo"
-        src={require("../images/meta.gif")}
+        src="/meta.gif"
         style={{ objectFit: "fill", width: "80%" }}
       />
     ),
@@ -21,13 +20,7 @@ const experiences = [
     role: "ICPC Competitive Programmer",
     description:
       "Competed in ICPC contests during my 4 years of undergrad. Solved hundreds of problems. Helped as a UCF High School Programming Tournament Judge by writing problems, creating testing data, and judging contests in real-time.",
-    img: (
-      <img
-        alt="Meta logo"
-        src={require("../images/ucfpt.png")}
-        style={{ objectFit: "fill" }}
-      />
-    ),
+    img: <img alt="Meta logo" src="ucfpt.png" style={{ objectFit: "fill" }} />,
   },
 ];
 

@@ -1,4 +1,3 @@
-import React from "react";
 import HomePage from "./pages/HomePage";
 import NavBar from "./components/NavBar";
 import ExperiencePage from "./pages/ExperiencePage";
@@ -11,6 +10,7 @@ function App() {
       <div style={{ marginBottom: 128 }}>
         <NavBar />
       </div>
+
       <Routes>
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/projects" element={<ProjectsPage />} />

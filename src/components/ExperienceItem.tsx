@@ -1,8 +1,15 @@
-import React from "react";
 import { Box, Grid } from "@mui/material";
 import colorPalette from "../data/ColorPalette";
+import { ReactNode } from "react";
 
-function ExperienceItem({ title, role, description, img }) {
+interface Props {
+  title: string;
+  role: string;
+  description: string;
+  img: ReactNode;
+}
+
+function ExperienceItem({ title, role, description, img }: Props) {
   return (
     <Grid container spacing={4}>
       <Grid item xs={6} className="flex items-center justify-center">

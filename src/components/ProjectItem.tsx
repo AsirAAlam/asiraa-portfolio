@@ -1,7 +1,13 @@
-import React from "react";
+import { ReactNode } from "react";
 import { Box, Typography } from "@mui/material";
 
-export default function ProjectItem({ title, children, href }) {
+interface Props {
+  title: string;
+  children: ReactNode;
+  href: string;
+}
+
+export default function ProjectItem({ title, children, href }: Props) {
   const handleClick = () => {
     window.location.href = href;
   };
@@ -12,7 +18,7 @@ export default function ProjectItem({ title, children, href }) {
         className="h-48 w-48 bg-sky-800"
         style={{ flexShrink: 0, cursor: "pointer" }}
         onClick={handleClick}
-      ></Box>
+      />
       <Box className="p-4 bg-gray-100">
         <Box className="bg-transparent">
           <Typography variant="h5" className="bg-transparent">

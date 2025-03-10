@@ -1,9 +1,14 @@
-import React from "react";
 import { Link, useLocation } from "react-router";
 
 import "./NavBarButton.css";
 
-export default function NavBarButton({ label, href }) {
+export default function NavBarButton({
+  label,
+  href,
+}: {
+  label: string;
+  href: string;
+}) {
   const location = useLocation();
 
   let isCurrent = location.pathname === href;
@@ -24,6 +29,7 @@ export default function NavBarButton({ label, href }) {
           height: "0.1em",
           opacity: isCurrent ? 1 : 0,
           transition: "opacity 0.3s",
+          // backgroundColor: 'green'
         }}
       />
     </Link>

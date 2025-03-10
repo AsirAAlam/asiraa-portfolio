@@ -1,6 +1,5 @@
-import React from "react";
 import { Box } from "@mui/material";
-import Handles from "../components/Handles";
+import Handles from "./Handles";
 import bio from "../data/Bio";
 import colorPalette from "../data/ColorPalette";
 

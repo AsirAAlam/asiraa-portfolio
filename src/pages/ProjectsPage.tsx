@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectItem from "../components/ProjectItem";
 import { Container, Box } from "@mui/material";
 

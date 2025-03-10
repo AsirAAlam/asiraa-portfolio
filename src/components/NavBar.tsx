@@ -1,11 +1,10 @@
-import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import NavBarButton from "./NavBarButton";
 
 export default function MyNavbar() {
   return (
-    <AppBar elevation={0} position="absolute">
+    <AppBar elevation={0} position="absolute" color="transparent">
       <div className="p-8">
         <Toolbar>
           <div className="flex space-x-8 ml-12">
