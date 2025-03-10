@@ -14,7 +14,7 @@ const projects = [
       </>
     ),
     href: "https://youtu.be/BqqgRUyl_rE",
-    imgSrc: "/ofast.png",
+    imgSrc: "/projects/ofast.png",
   },
   {
     title: "Garden of Thorns",
@@ -30,6 +30,7 @@ const projects = [
       </>
     ),
     href: "https://youtu.be/wU_3P-iMy1w",
+    imgSrc: "/projects/got.png",
   },
   {
     title: "Handler",
