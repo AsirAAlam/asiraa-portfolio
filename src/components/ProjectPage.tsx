@@ -9,7 +9,7 @@ export default function ProjectPage() {
           item
           xs={6}
           sx={{ display: "flex", flexDirection: "row-reverse" }}
-        ></Grid>
+        />
 
         <Grid item xs={6}>
           <Box m={5} />
