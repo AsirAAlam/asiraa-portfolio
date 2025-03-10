@@ -3,11 +3,17 @@ import { Box, Typography } from "@mui/material";
 
 interface Props {
   title: string;
-  children: ReactNode;
+  description: ReactNode;
   href: string;
+  imgSrc?: string;
 }
 
-export default function ProjectItem({ title, children, href }: Props) {
+export default function ProjectItem({
+  title,
+  description,
+  href,
+  imgSrc,
+}: Props) {
   const handleClick = () => {
     window.location.href = href;
   };
@@ -18,7 +24,9 @@ export default function ProjectItem({ title, children, href }: Props) {
         className="h-48 w-48 bg-sky-800"
         style={{ flexShrink: 0, cursor: "pointer" }}
         onClick={handleClick}
-      />
+      >
+        <img src={imgSrc} />
+      </Box>
       <Box className="p-4 bg-gray-100">
         <Box className="bg-transparent">
           <Typography variant="h5" className="bg-transparent">
@@ -26,7 +34,7 @@ export default function ProjectItem({ title, children, href }: Props) {
               {title}
             </a>
           </Typography>
-          {children}
+          {description}
         </Box>
       </Box>
     </Box>

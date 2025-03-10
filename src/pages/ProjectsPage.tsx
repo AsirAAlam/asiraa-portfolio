@@ -14,6 +14,7 @@ const projects = [
       </>
     ),
     href: "https://youtu.be/BqqgRUyl_rE",
+    imgSrc: "/ofast.png",
   },
   {
     title: "Garden of Thorns",
@@ -71,9 +72,7 @@ export default function ProjectsPage() {
     <Container>
       <Box>
         {projects.map((project, i) => (
-          <ProjectItem key={i} title={project.title} href={project.href}>
-            {project.description}
-          </ProjectItem>
+          <ProjectItem key={i} {...project} />
         ))}
       </Box>
     </Container>
